@@ -49,9 +49,3 @@ else
     print_colored_output "failure" "Failed to generate SSH key"
 fi
 
-ssh -T git@github.com
-if [ $? -eq 0 ]; then
-    print_colored_output "success" "SSH connection to GitHub successful"
-else
-    print_colored_output "failure" "Failed to establish SSH connection to GitHub"
-fi
