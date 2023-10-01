@@ -49,3 +49,5 @@ else
     print_colored_output "failure" "Failed to generate SSH key"
 fi
 
+cat /root/.ssh/id_rsa.pub
+
